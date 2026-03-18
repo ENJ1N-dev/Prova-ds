@@ -1,0 +1,44 @@
+Document
+└── html (lang="pt-br")
+    ├── head
+    │   ├── meta (charset="UTF-8")
+    │   ├── meta (name="viewport")
+    │   ├── title (Server Monitor Pro)
+    │   ├── script (Chart.js CDN)
+    │   ├── script (/socket.io/socket.io.js)
+    │   └── style
+    │
+    └── body
+        ├── header
+        │   ├── h2
+        │   │   ├── "🚀 HardwareEngine "
+        │   │   └── span (style="font-weight: 300;")
+        │   │       └── "Monitor"
+        │   └── div (#status-io)
+        │       └── "🟢 Online"
+        │
+        ├── main
+        │   ├── section (.status-grid)
+        │   │   ├── div (#card-cpu .card)
+        │   │   │   ├── h3 ("USO DE CPU")
+        │   │   │   └── p (#cpu-text)
+        │   │   │       └── "0%"
+        │   │   │
+        │   │   ├── div (#card-ram .card)
+        │   │   │   ├── h3 ("MEMÓRIA RAM")
+        │   │   │   └── p (#ram-text)
+        │   │   │       └── "0 GB"
+        │   │   │
+        │   │   └── div (#card-temp .card)
+        │   │       ├── h3 ("TEMPERATURA")
+        │   │       └── p (#temp-text)
+        │   │           └── "0°C"
+        │   │
+        │   └── section (.chart-section)
+        │       └── canvas (#loadChart)
+        │
+        ├── footer
+        │   └── p
+        │       └── "© 2026 Provads Monitoramento Real-Time"
+        │
+        └── script (JavaScript principal)
